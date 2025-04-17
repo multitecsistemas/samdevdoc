@@ -1,0 +1,9 @@
+.md-grid {
+	max-width: 1500px;
+}
+.md-content__inner {
+	text-align: justify;
+}
+.md-typeset hr {
+	margin-top: -15px !important;
+}

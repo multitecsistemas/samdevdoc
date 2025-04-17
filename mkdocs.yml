@@ -1,0 +1,62 @@
+site_name: SAM4Devs
+repo_url: https://github.com/multitecsistemas/sam4
+repo_name: multitecsistemas/sam4
+edit_uri: ""
+
+nav:    
+    - Comece Aqui: index.md
+    - Processos:
+        - Tipos de Processos: tiposProcessos.md
+        - Listagens: relatorios.md
+        - Scripts de Operação: scripts.md
+        - Formulas: formulas.md
+        - Servlet: servlet.md
+        
+theme: 
+    name: material
+    language: pt
+    features:
+        - navigation.sections
+        - navigation.top
+    palette: 
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Ativar modo escuro
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Desativar modo escuro
+         
+copyright: Copyright &copy; 2021 Multitec Sistemas
+
+extra_css:
+    - css/extra.css
+    
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - abbr
+  - def_list
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/multitecsistemas
