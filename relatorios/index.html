@@ -1,0 +1,1935 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tiposProcessos/">
+      
+      
+        <link rel="next" href="../scripts/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Listagens - SAM4Devs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#listagens" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="SAM4Devs" class="md-header__button md-logo" aria-label="SAM4Devs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SAM4Devs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Listagens
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Ativar modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ativar modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Desativar modo escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Desativar modo escuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/multitecsistemas/samdevdoc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    multitecsistemas/samdevdoc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SAM4Devs" class="md-nav__button md-logo" aria-label="SAM4Devs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SAM4Devs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/multitecsistemas/samdevdoc" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    multitecsistemas/samdevdoc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Comece Aqui
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Processos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Processos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tiposProcessos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tipos de Processos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Listagens
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Listagens
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extração de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos Default
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-check
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-date-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-date-interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-selec" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-selec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="m-selec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributo-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributo options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributo-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributo request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-panel-check-mpms" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-panel-check-mpms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-panel-criterio" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-panel-criterio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métodos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obterempresaativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterEmpresaAtiva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obterusuariologado" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterUsuarioLogado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getacessoaobanco" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAcessoAoBanco
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criarparametrosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      criarParametroSql
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obterwherepadrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterWherePadrao
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecionaralinhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      selecionarAlinhamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcampo" class="md-nav__link">
+    <span class="md-ellipsis">
+      getCampo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsession" class="md-nav__link">
+    <span class="md-ellipsis">
+      getSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interromper" class="md-nav__link">
+    <span class="md-ellipsis">
+      interromper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      get()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trunc" class="md-nav__link">
+    <span class="md-ellipsis">
+      trunc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scripts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scripts de Operação
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../formulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Formulas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../servlet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Servlet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introdução
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extracao-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extração de Dados
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#componentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Componentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Componentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributos-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributos Default
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-input
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-check
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-radio" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-radio
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-date
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-date-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-date-interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-selec" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-selec
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="m-selec">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#atributo-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributo options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributo-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributo request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-panel-check-mpms" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-panel-check-mpms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#m-panel-criterio" class="md-nav__link">
+    <span class="md-ellipsis">
+      m-panel-criterio
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metodos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Métodos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obterempresaativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterEmpresaAtiva
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obterusuariologado" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterUsuarioLogado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getacessoaobanco" class="md-nav__link">
+    <span class="md-ellipsis">
+      getAcessoAoBanco
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criarparametrosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      criarParametroSql
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obterwherepadrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      obterWherePadrao
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selecionaralinhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      selecionarAlinhamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcampo" class="md-nav__link">
+    <span class="md-ellipsis">
+      getCampo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsession" class="md-nav__link">
+    <span class="md-ellipsis">
+      getSession
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interromper" class="md-nav__link">
+    <span class="md-ellipsis">
+      interromper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    <span class="md-ellipsis">
+      get()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trunc" class="md-nav__link">
+    <span class="md-ellipsis">
+      trunc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="listagens">Listagens<a class="headerlink" href="#listagens" title="Permanent link">&para;</a></h1>
+<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
+<p>A geração de listagens é uma funcionalidade essencial para apresentar dados de forma estruturada e fácil de interpretar, suportando a tomada de decisão. Este guia detalha como o sistema realiza a extração de informações da base de dados, formata listagens e emprega componentes e métodos específicos para atender às necessidades de diversos relatórios.</p>
+<h2 id="extracao-de-dados">Extração de Dados<a class="headerlink" href="#extracao-de-dados" title="Permanent link">&para;</a></h2>
+<p>O processo de Extração de Dados consiste em se comunicar com bancos de dados para capturar os registros que serão disponibilizados para geração de relatórios. Todas as extrações são realizadas por meio de consultas SQL ou chamadas a procedimentos armazenados, e podem incluir:</p>
+<ul>
+<li>Consultas livres</li>
+<li>Listagens gerais ou filtradas</li>
+<li>Relatórios resumidos ou analíticos</li>
+<li>Estatísticas e métricas customizadas</li>
+<li>Documentos fiscais e não fiscais</li>
+</ul>
+<p>Os dados extraídos devem ser precisos, atualizados e refletir o estado real do sistema.</p>
+<p><strong>Fluxo de extração</strong>:</p>
+<ol>
+<li>Definição dos parâmetros de consulta (datas, filtros, agrupamentos).</li>
+<li>Execução da query.</li>
+<li>Validação e tratamento dos dados.</li>
+<li>Conversão dos resultados para o formato PDF ou XLS.</li>
+</ol>
+<h2 id="componentes">Componentes<a class="headerlink" href="#componentes" title="Permanent link">&para;</a></h2>
+<p>Estes componentes são baseados na sintaxe das tags HTML, são construidos a partir do framework <a href="https://br.vuejs.org/v2/guide/index.html">VUE.js</a> e podem ser utilizados para a criação de filtros que são utilizados nos processos de Extração de Dados.</p>
+<h3 id="atributos-default">Atributos Default<a class="headerlink" href="#atributos-default" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Assim como nas tags do HTML os componentes Multitec também possuem seus atributos. Todos os componentes por default possuem os seguintes atributos para a sua configuração.</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>Label para o campo</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>help</td>
+<td>Texto de ajuda para o campo</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID do campo</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>wrapperClass</td>
+<td>Classe (css) para a DIV wrapper do input</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>showWrapper</td>
+<td>Indica se a DIV wrapper do componente será exibida</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>required</td>
+<td>Indica se esse campo é requerido</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>v-model</td>
+<td>Nome do componente, utilizado para obter seu valor</td>
+<td>*</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m-input"><code>m-input</code><a class="headerlink" href="#m-input" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente renderiza um campo <code>input</code> para textos, com os seguintes atributos:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>Tipo do conteúdo aceito</td>
+<td>text, integer, decimal, monthYear</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-input!" src="../img/m-input.png" title="m-input" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Campo de texto&quot;</span> <span class="na">help</span><span class="o">=</span><span class="s">&quot;Campo obrigatório&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h3 id="m-check"><code>m-check</code><a class="headerlink" href="#m-check" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente renderiza um campo <code>checkbox</code>, com os seguintes atributos:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>option</td>
+<td>Define qual o valor será enviado para o modelo</td>
+<td>*</td>
+<td>true</td>
+</tr>
+<tr>
+<td>inline</td>
+<td>Define se será renderizado sem quebra de linha</td>
+<td>false, true</td>
+<td>false</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>Agrupa os CheckBox com o mesmo nome em um array</td>
+<td>false, true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-check!" src="../img/m-check.png" title="m-check" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-check</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Marque este campo&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h3 id="m-radio"><code>m-radio</code><a class="headerlink" href="#m-radio" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente renderiza um campo <code>radio</code>, com os seguintes atributos:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>option</td>
+<td>Define qual o valor será enviado para o modelo</td>
+<td>*</td>
+<td>true</td>
+</tr>
+<tr>
+<td>inline</td>
+<td>Define se será renderizado sem quebra de linha</td>
+<td>false, true</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-radio!" src="../img/m-radio.png" title="m-radio" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-radio</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot; Marque este campo&quot;</span> <span class="na">option</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.texto&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h3 id="m-date"><code>m-date</code><a class="headerlink" href="#m-date" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente renderiza um campo <code>input</code> do tipo <code>date</code>, com os seguintes atributos:</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>format</td>
+<td>Função destinada para a formatação de datas</td>
+<td>Function (JavaScript)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>min</td>
+<td>Menor data permitida para o componente</td>
+<td>dd/MM/yyyy</td>
+<td>-</td>
+</tr>
+<tr>
+<td>max</td>
+<td>Maior data permitida para o componente</td>
+<td>dd/MM/yyyy</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-date!" src="../img/m-date.png" title="m-date" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-date</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;01/01/2000&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;31/12/2100&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Selecione uma data&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.data&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h3 id="m-date-interval"><code>m-date-interval</code><a class="headerlink" href="#m-date-interval" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Exibe um painel para informar um intervalo de datas, os atributos são iguais aos do m-date.</p>
+<p>Exemplo:</p>
+<p><img alt="Campo m-date-interval!" src="../img/m-date-interval.png" title="m-date-interval" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-date-interval</span> <span class="na">min</span><span class="o">=</span><span class="s">&quot;01/01/2000&quot;</span> <span class="na">max</span><span class="o">=</span><span class="s">&quot;31/12/2100&quot;</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Selecione duas data&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.data&quot;</span> <span class="na">:required</span><span class="o">=</span><span class="s">&quot;true&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h3 id="m-selec"><code>m-selec</code><a class="headerlink" href="#m-selec" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Exibe um componente que pode ser renderizado como um ComboBox ou como um AutoComplete.</p>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiple</td>
+<td>Indica se é permitido selecionar mais de um elemento</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>placeholder</td>
+<td>Texto exibido quando nenhum item está selecionado</td>
+<td>*</td>
+<td>-</td>
+</tr>
+<tr>
+<td>selectFirstOnLoad</td>
+<td>Seleciona o primeiro elemento quando renderizado</td>
+<td>true, false</td>
+<td>false</td>
+</tr>
+<tr>
+<td>showClearButton</td>
+<td>Indica irá exibir o botão limpar</td>
+<td>true, false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>options</td>
+<td>Array de objetos que serão exibidos no ComboBox</td>
+<td>Array[Object]</td>
+<td>-</td>
+</tr>
+<tr>
+<td>adicionaWherePadrao</td>
+<td>indica se deve adicionar o where padrão à select</td>
+<td>true, false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>request</td>
+<td>Define como os dados para o componente serão obtidos</td>
+<td>Object</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para entender melhor o atributo <code>adicionaWherePadrao</code> veja nosso manual, nos tópicos: <a href="http://samdoc.info/manuald?id=57791">Tabelas</a>, <a href="http://samdoc.info/manuald?id=45814">Grupos Centralizadores</a> e <a href="http://samdoc.info/manuald?id=13726">Uso dos Registros</a>. </p>
+</div>
+<p>Existem duas maneiras de se preencher um ComboBox, através de dados fixos ou através de registros vindo do banco de dados, veja como realizar estas duas opções:</p>
+<h4 id="atributo-options">Atributo options<a class="headerlink" href="#atributo-options" title="Permanent link">&para;</a></h4>
+<hr />
+<p>Este atributo permite iniciar o componente <code>m-select</code> com algumas opções default, estas opções podem ser definidas através do atributo <code>options</code>.</p>
+<p>O Objeto do Array pode ter 3 propriedades:</p>
+<ul>
+<li><strong>value</strong>: Valor que será enviado para o model.</li>
+<li><strong>label</strong>: Valor que será exibido no componente quando selecionado.</li>
+<li><strong>option</strong>: Texto que será exibido quando a caixa do ComboBox for aberta.</li>
+</ul>
+<p>Exemplo:</p>
+<p><img alt="Campo m-select!" src="../img/m-select-options.png" title="m-select" /></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">HTML</label><label for="__tabbed_1_2">JS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-select</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Opções&quot;</span> <span class="na">:multiple</span><span class="o">=</span><span class="s">&quot;false&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Selecione uma opção&quot;</span> <span class="na">:options</span><span class="o">=</span><span class="s">&quot;opcoes&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">classe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">opcoes</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Opção 1&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">option</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selecionado a opção 1&#39;</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Opção 2&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">option</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selecionado a opção 1&#39;</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Opção 3&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">option</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Selecionado a opção 1&#39;</span><span class="p">},</span>
+<span class="w">        </span><span class="p">]</span><span class="w"> </span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">onLoad</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="atributo-request">Atributo request<a class="headerlink" href="#atributo-request" title="Permanent link">&para;</a></h4>
+<hr />
+<p>Esse atributo define como os dados para o ComboBox serão obtidos no Servidor.</p>
+<p>O Objeto do Array pode ter 4 propriedades:</p>
+<ul>
+<li><strong>table</strong>: Indicando qual a tabela da select.</li>
+<li><strong>columns</strong>: Lista de colunas separadas por virgula.</li>
+<li><strong>data</strong>: Indica se a select conterá JOIN ou WHERE.<ul>
+<li><strong>join</strong>: Array definido por chave e valor da seguinte forma:<ul>
+<li><strong>inner</strong>: Indica que o valor referente a chave inner será implementado como um INNER JOIN.</li>
+<li><strong>left</strong>: Indica que o valor referente a chave left será implementado como um LEFT JOIN.</li>
+</ul>
+</li>
+<li><strong>where</strong>: Array definido por chave e valor da seguinte forma:<ul>
+<li><strong>nome</strong>: Nome do campo a ser constituído com o seu valor no WHERE.</li>
+<li><strong>valor</strong>: Valor a ser comparado no WHERE.</li>
+</ul>
+</li>
+<li><strong>customWhere</strong>: String contendo uma condição WHERE livre.</li>
+</ul>
+</li>
+<li><strong>iniFimColumn</strong>: Por padrão o retorno do componente <code>m-select</code> é o campo ID da tabela. Esta propriedade altera a coluna que virá no resultado da request.</li>
+</ul>
+<p>Exemplo:</p>
+<p><img alt="Campo m-select!" src="../img/m-select-request.png" title="m-select" /></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">HTML</label><label for="__tabbed_2_2">JS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-select</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Usuários&quot;</span> <span class="na">:multiple</span><span class="o">=</span><span class="s">&quot;false&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Selecione uma opção&quot;</span> <span class="na">:request</span><span class="o">=</span><span class="s">&quot;request&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">classe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">request</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">table</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;aab10&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">columns</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;aab10nome, aab10email&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">data</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                 </span><span class="nx">join</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">inner</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;aab10emprDefault&#39;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="nx">left</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;aab10credSamPalm&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span>
+<span class="w">                 </span><span class="nx">where</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">aab10user</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;MASTER&#39;</span><span class="p">},</span>
+<span class="w">                 </span><span class="nx">customWhere</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;AND aab10id = 5000&#39;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">onLoad</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="m-panel-check-mpms"><code>m-panel-check-mpms</code><a class="headerlink" href="#m-panel-check-mpms" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente exibe um painel com 4 Checkbox que são utilizados para filtrar os registros de um <code>m-select</code> por <strong>Material, Produto, Mercadoria</strong> ou <strong>Serviço</strong>.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para entender melhor o componente <code>m-panel-check-mpms</code> veja nosso manual, no tópico: <a href="http://samdoc.info/manuald?id=61269">Itens &gt; Tipos de Itens</a>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>selectRef</td>
+<td>Indicando qual o REF do m-select que deseja controlar</td>
+<td>true, false</td>
+<td>-</td>
+</tr>
+<tr>
+<td>showMaterial</td>
+<td>Indica se irá exibir o check de Material</td>
+<td>*</td>
+<td>true</td>
+</tr>
+<tr>
+<td>showProduto</td>
+<td>Indica se irá exibir o check de Produto</td>
+<td>true, false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>showMercadoria</td>
+<td>Indica se irá exibir o check de Mercadoria</td>
+<td>true, false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>showServico</td>
+<td>Indica se irá exibir o check de Serviço</td>
+<td>true, false</td>
+<td>true</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-panel-check-mpms!" src="../img/m-panel-check-mpms.png" title="m-panel-check-mpms" /></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">HTML</label><label for="__tabbed_3_2">JS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-panel-check-mpms</span> <span class="na">selectRef</span><span class="o">=</span><span class="s">&quot;selectItem&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">m-select</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Itens&quot;</span> <span class="na">:multiple</span><span class="o">=</span><span class="s">&quot;false&quot;</span> <span class="na">ref</span><span class="o">=</span><span class="s">&quot;selectItem&quot;</span> <span class="na">:request</span><span class="o">=</span><span class="s">&quot;request&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">classe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">request</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nx">table</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;abm01&#39;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">columns</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;abm01codigo, abm01na&#39;</span><span class="p">,</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">onLoad</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">    </span><span class="nx">methods</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="m-panel-criterio"><code>m-panel-criterio</code><a class="headerlink" href="#m-panel-criterio" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este componente exibe um painel que permite a utilização dos critérios de seleção nos filtros.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>Para entender melhor o componente <code>m-panel-criterio</code> veja nosso manual, no tópico: <a href="http://samdoc.info/manuald?id=57806">Critérios de Seleção</a>.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Valores Permitidos</th>
+<th>Valor Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tipo</td>
+<td>Informa qual a aplicação do critério</td>
+<td>entidade, item, trabalhador</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:</p>
+<p><img alt="Campo m-panel-criterio!" src="../img/m-panel-criterio.png" title="m-panel-criterio" /></p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-panel-criterio</span> <span class="na">tipo</span><span class="o">=</span><span class="s">&quot;entidade&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#39;filtros.criterios&#39;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<h2 id="metodos">Métodos<a class="headerlink" href="#metodos" title="Permanent link">&para;</a></h2>
+<p>Para facilitar o desenvolvimento das listagens o SAM conta com vários métodos para realizar os mais diversos tipos de processos.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>A partir de agora veremos alguns termos que são exclusivos do SAM, recomendamos fortemente que você leia e conheça um pouco mais sobre a estrutura do SAM. Visite nosso <a href="http://samdoc.info/manuald?id=57762">manual</a>.</p>
+</div>
+<h3 id="obterempresaativa"><code>obterEmpresaAtiva</code><a class="headerlink" href="#obterempresaativa" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna um objeto do tipo Aac10 contendo os dados da empresa ativa.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">Aac10</span><span class="w"> </span><span class="n">aac10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obterEmpresaAtiva</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="obterusuariologado"><code>obterUsuarioLogado</code><a class="headerlink" href="#obterusuariologado" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna um objeto do tipo Aab10 contendo os dados do usuário logado no sistema.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">Aab10</span><span class="w"> </span><span class="n">aab10</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">obterUsuarioLogado</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="getacessoaobanco"><code>getAcessoAoBanco</code><a class="headerlink" href="#getacessoaobanco" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna uma coleção de métodos uteis para manipulação do banco de dados descritos a baixo:</p>
+<table>
+<thead>
+<tr>
+<th>Metodo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buscarListaDeTableMap</td>
+<td>Retorna uma lista de <code>TableMap</code> contendo os registros obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>buscarUnicoTableMap</td>
+<td>Retorna um único <code>TableMap</code> contendo o registro obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>buscarListaDeRegistros</td>
+<td>Retorna uma lista de registros (entidades) obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>buscarRegistroUnico</td>
+<td>Retorna um único registro (entidade) obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>buscarMultiResultSet</td>
+<td>Retorna um objeto <code>MultiResultSet</code> contendo os registros obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterMapDeRegistros</td>
+<td>Retorna um <code>Map</code> contendo os registros obtidos a partir da execução de uma SQL, usando coluna como chave/valor.</td>
+</tr>
+<tr>
+<td>obterListaDeBigDecimal</td>
+<td>Retorna uma lista de <code>BigDecimal</code> obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterBigDecimal</td>
+<td>Retorna um único <code>BigDecimal</code> obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterListaDeInteger</td>
+<td>Retorna uma lista de <code>Integer</code> obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterInteger</td>
+<td>Retorna um único <code>Integer</code> obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterListaDeDate</td>
+<td>Retorna uma lista de objetos <code>LocalDate</code> obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterDate</td>
+<td>Retorna um único objeto <code>LocalDate</code> obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterListaDeString</td>
+<td>Retorna uma lista de <code>String</code> obtidas a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterString</td>
+<td>Retorna uma única <code>String</code> obtida a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterListaDeLong</td>
+<td>Retorna uma lista de <code>Long</code> obtidos a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>obterLong</td>
+<td>Retorna um único <code>Long</code> obtido a partir da execução de uma SQL.</td>
+</tr>
+<tr>
+<td>buscarRegistroUnicoById</td>
+<td>Retorna um registro de uma tabela pelo ID informado como argumento.</td>
+</tr>
+<tr>
+<td>buscarRegistroUnicoByCriterion</td>
+<td>Retorna um registro de uma tabela filtrado por um <code>Criterion</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="criarparametrosql"><code>criarParametroSql</code><a class="headerlink" href="#criarparametrosql" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna um objeto do tipo <a href="/parametro">Parametro</a> para ser utilizado nos métodos que realizam a manipulação do banco de dados que vimos acima.</p>
+<p><strong>Argumentos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>Chave</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Valor</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot; SELECT * FROM Abm01 WHERE abm01codigo = :codigo AND abm01tipo = :tipo &quot;</span>
+
+<span class="n">Parametro</span><span class="w"> </span><span class="n">paramCodigo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">criarParametroSql</span><span class="p">(</span><span class="s">&quot;codigo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;0101001&quot;</span><span class="p">)</span>
+<span class="n">Parametro</span><span class="w"> </span><span class="n">paramTipo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">criarParametroSql</span><span class="p">(</span><span class="s">&quot;tipo&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="obterwherepadrao"><code>obterWherePadrao</code><a class="headerlink" href="#obterwherepadrao" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna um WHERE filtrando pelos <a href="http://samdoc.info/manuald?id=57791">Campos Default</a> para ser utilizado em SQLs.</p>
+<p><strong>Argumentos</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>Nome da Classe</td>
+</tr>
+<tr>
+<td>Object</td>
+<td>Comparador Ex.: WHERE, AND, OR</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Exemplo</label><label for="__tabbed_7_2">Retorno</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;SELECT * FROM Eaa01 WHERE eaa01id = 123 &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">obterWherePadrao</span><span class="p">(</span><span class="s">&quot;Eaa01&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;AND&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="s">&quot;SELECT * FROM Eaa01 WHERE eaa01id = 123 AND eaa01gc IN (1, 2, 3)&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="selecionaralinhamento"><code>selecionarAlinhamento</code><a class="headerlink" href="#selecionaralinhamento" title="Permanent link">&para;</a></h3>
+<hr />
+<p>O alinhamento de valores permite fazer um alinhamento dos campos de registros contidos em um leiaute, uma fórmula, em listagens para alinhar campos livres do sistema (Json), possibilitando usar nas fórmulas um nome padronizado.
+Este método seleciona qual alinhamento de valores será utilizado no script</p>
+<p><strong>Argumentos:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>Código do alinhamento</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:1"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">selecionarAlinhamento</span><span class="p">(</span><span class="s">&quot;0001&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="getcampo"><code>getCampo</code><a class="headerlink" href="#getcampo" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna o campo informado no alinhamento de valores pelo conteúdo do registro. Este método deve ser utilizado após a utilização do método <code>selecionarAlinhamento</code></p>
+<p><strong>Argumentos:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>Registro</td>
+</tr>
+<tr>
+<td>String</td>
+<td>Campo</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">getCampo</span><span class="p">(</span><span class="s">&quot;C100&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ICMS&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="getsession"><code>getSession</code><a class="headerlink" href="#getsession" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método retorna um objeto do tipo <a href="/session">Session</a> para manipular o banco de dados.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:1"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">Session</span><span class="w"> </span><span class="n">session</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSession</span><span class="p">()</span>
+<span class="n">session</span><span class="p">.</span><span class="na">persist</span><span class="p">(</span><span class="n">xpto</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="interromper"><code>interromper</code><a class="headerlink" href="#interromper" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este método lança uma exceção ao processo, interrompendo-o.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td>Mensagem a ser exibida</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:1"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Exemplo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">interromper</span><span class="p">(</span><span class="s">&quot;Você não tem permissão para continuar.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="get">get()<a class="headerlink" href="#get" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Quando uma Listagem é executada, alguns dados podem ser enviados para o processo, estes dados são conteudo dos filtros. O envio deste dado é feito através de um Mapa de chave e valor, para recuperar estes dados utilizamos o método <code>get()</code> e suas variações.</p>
+<p>Exemplo: Em uma listagem existe um campo de data e foi atribuido o nome <code>dataDeInicio</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">m-date</span> <span class="na">label</span><span class="o">=</span><span class="s">&quot;Data de Inicio&quot;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&quot;filtros.dataDeInicio&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<p>Para recuperar o conteudo deste campo a partir do código groovy utilizamos o método <code>get()</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">def</span><span class="w"> </span><span class="n">dataDeInicio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get</span><span class="o">(</span><span class="s2">&quot;dataDeInicio&quot;</span><span class="o">)</span>
+</code></pre></div>
+<p>Este método por si só retorna um objeto. Contamos com alguma variações deste método que nos trazem os dados já convertidos.</p>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Retorno</th>
+<th>Método</th>
+<th>Retorno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>getString()</td>
+<td>Texto</td>
+<td>getLocalDate()</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>getBoolean()</td>
+<td>Booleano</td>
+<td>getLocalTime()</td>
+<td>Hora</td>
+</tr>
+<tr>
+<td>getInteger()</td>
+<td>Inteiro</td>
+<td>getIntervaloDatas()</td>
+<td>Array de Datas</td>
+</tr>
+<tr>
+<td>getLong()</td>
+<td>Longo</td>
+<td>getListLong()</td>
+<td>Lista de Longos</td>
+</tr>
+<tr>
+<td>getBigDecimal()</td>
+<td>Decimal</td>
+<td>getListInteger()</td>
+<td>Lista de Inteiros</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trunc"><code>trunc</code><a class="headerlink" href="#trunc" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Este metodo trunca um valor Decimal para a quantidade de casas definido no argumento.</p>
+<p><strong>Argumentos:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BigDecimal</td>
+<td>Dicimal a arredondar</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Casas decimais</td>
+</tr>
+</tbody>
+</table>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Exemplo</label><label for="__tabbed_12_2">Retorno</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="n">BigDecimal</span><span class="w"> </span><span class="n">decimal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">12.8867899</span>
+<span class="n">BigDecimal</span><span class="w"> </span><span class="n">duasCasas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">trunc</span><span class="p">(</span><span class="n">decimal</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="mf">12.886</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2021 Multitec Sistemas
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/multitecsistemas" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
