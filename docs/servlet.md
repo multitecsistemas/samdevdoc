@@ -11,6 +11,9 @@ Uma Servlet dá uma ideia de servidor pequeno cujo objetivo basicamente é receb
 | api-user-header     | Chave da API do SAM | Autenticar a requisição                      | SIM       |
 | ignore-body-decrypt | `true` ou `false`   | ignora a criptografia do corpo da requisição | NÃO       |
 
+!!! info "Saiba Mais"
+	Para conhecer mais, veja alguns [exemplos](./exemplos/servlet.md). 
+
 ## Métodos
 
 ### `obterEmpresaAtiva`

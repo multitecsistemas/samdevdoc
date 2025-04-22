@@ -13,6 +13,9 @@ As tarefas do SAM são divididas em dois tipos:
 1. Cadastros
 2. Processos
 
+!!! info "Saiba Mais"
+	Para conhecer mais, veja alguns [exemplos](./exemplos/scripts.md). 
+
 ## Métodos
 
 ### `execute`
