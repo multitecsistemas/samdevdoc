@@ -79,7 +79,7 @@ Soma e subtrai valores de eventos de CAE, considerando seu fator de compensaçã
 ## Exemplo de uso
 
 ```java
-HoleriteUtils util = new HoleriteUtils(session, samWhere);
+HoleriteUtils util = getHoleriteUtils();
 
 Abh80 trabalhador = util.findAbh80ByUniqueKey("000123");
 Integer qtdeDependentes = util.findAbh8002QtdeDependentes(trabalhador.getId());

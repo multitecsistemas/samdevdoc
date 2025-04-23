@@ -88,15 +88,3 @@ Versão obsoleta para buscar o PM retroativo.
 
 #### `BigDecimal buscarPMRetroativo(Long abm01id, LocalDate bcc01data, Long bcc01id)`
 Versão atual para buscar o preço médio do lançamento anterior.
-
----
-
-## Exemplo de uso
-
-```java
-SCEUtils sceUtils = new SCEUtils(session, samWhere, sceService);
-
-BigDecimal saldo = sceUtils.saldoEstoqueItemResumido(101L, 1, 1);
-List<TableMap> analitico = sceUtils.saldoEstoqueItemAnalitico(101L, 1, 1);
-BigDecimal precoMedio = sceUtils.precoMedioUnitarioAtual(101L, 10L);
-```
