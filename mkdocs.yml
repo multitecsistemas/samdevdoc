@@ -1,6 +1,6 @@
 site_name: SAM4Devs
-repo_url: https://github.com/multitecsistemas/sam4
-repo_name: multitecsistemas/sam4
+repo_url: https://github.com/multitecsistemas/samdevdoc
+repo_name: multitecsistemas/samdevdoc
 edit_uri: ""
 
 nav:    
@@ -11,6 +11,19 @@ nav:
         - Scripts de Operação: scripts.md
         - Formulas: formulas.md
         - Servlet: servlet.md
+    - Uteis:
+        - DateUtils: utils/DateUtils.md
+        - DecimalUtils: utils/DecimalUtils.md
+        - ESocialUtils: utils/ESocialUtils.md
+        - HoleriteUtils: utils/HoleriteUtils.md
+        - InterceptadorUtils: utils/InterceptadorUtils.md
+        - MDFeUtils: utils/MDFeUtils.md
+        - NFeUtils: utils/NFeUtils.md
+        - ReinfUtils: utils/ReinfUtils.md
+        - SCEUtils: utils/SCEUtils.md
+        - SFPUtils: utils/SFPUtils.md
+        - StringUtils: utils/StringUtils.md
+        - Utils: utils/Utils.md
         
 theme: 
     name: material
