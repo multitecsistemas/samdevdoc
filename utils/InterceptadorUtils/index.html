@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../HoleriteUtils/">
+      
+      
+        <link rel="next" href="../MDFeUtils/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>Exemplo Servlet - SAM4Devs</title>
+        <title>InterceptadorUtils - SAM4Devs</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exemplo-servlet" class="md-skip">
+        <a href="#interceptadorutils" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exemplo Servlet
+              InterceptadorUtils
             
           </span>
         </div>
@@ -436,8 +440,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -448,11 +454,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -468,7 +474,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Uteis
@@ -482,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/DateUtils/" class="md-nav__link">
+      <a href="../DateUtils/" class="md-nav__link">
         
   
   
@@ -505,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/DecimalUtils/" class="md-nav__link">
+      <a href="../DecimalUtils/" class="md-nav__link">
         
   
   
@@ -528,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/ESocialUtils/" class="md-nav__link">
+      <a href="../ESocialUtils/" class="md-nav__link">
         
   
   
@@ -551,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/HoleriteUtils/" class="md-nav__link">
+      <a href="../HoleriteUtils/" class="md-nav__link">
         
   
   
@@ -571,10 +577,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../utils/InterceptadorUtils/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    InterceptadorUtils
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -585,6 +613,233 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pacote" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pacote
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instancia-singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instância Singleton
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Instância Singleton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#static-interceptadorutils-instance" class="md-nav__link">
+    <span class="md-ellipsis">
+      static InterceptadorUtils INSTANCE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessao-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sessão SAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sessão SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samwhere-getsamwhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAMWhere getSamWhere()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-getvariaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variaveis getVariaveis()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entidades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aac01-obtergclong-aac01id-session-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aac01 obterGC(Long aac01id, Session s)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aab10-obterusuariologado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aab10 obterUsuarioLogado()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aac10-obterempresaativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aac10 obterEmpresaAtiva()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where Padrão
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where Padrão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-obterwherepadraostring-classe" class="md-nav__link">
+    <span class="md-ellipsis">
+      String obterWherePadrao(String classe)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-obterwherepadraostring-classe-string-whereandor" class="md-nav__link">
+    <span class="md-ellipsis">
+      String obterWherePadrao(String classe, String whereAndOr)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banco de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bancodadosutils-getacessoaobancosession-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      BancoDadosUtils getAcessoAoBanco(Session s)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametro-criarparametrosqlstring-chave-object-valor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parametro criarParametroSql(String chave, Object valor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controle-de-fluxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle de Fluxo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controle de Fluxo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#void-interromperstring-mensagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      void interromper(String mensagem)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uso
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -597,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/MDFeUtils/" class="md-nav__link">
+      <a href="../MDFeUtils/" class="md-nav__link">
         
   
   
@@ -620,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/NFeUtils/" class="md-nav__link">
+      <a href="../NFeUtils/" class="md-nav__link">
         
   
   
@@ -643,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/ReinfUtils/" class="md-nav__link">
+      <a href="../ReinfUtils/" class="md-nav__link">
         
   
   
@@ -666,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/SCEUtils/" class="md-nav__link">
+      <a href="../SCEUtils/" class="md-nav__link">
         
   
   
@@ -689,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/SFPUtils/" class="md-nav__link">
+      <a href="../SFPUtils/" class="md-nav__link">
         
   
   
@@ -712,7 +967,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/StringUtils/" class="md-nav__link">
+      <a href="../StringUtils/" class="md-nav__link">
         
   
   
@@ -735,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../utils/Utils/" class="md-nav__link">
+      <a href="../Utils/" class="md-nav__link">
         
   
   
@@ -785,46 +1040,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#criando-um-servlet" class="md-nav__link">
+  <a href="#pacote" class="md-nav__link">
     <span class="md-ellipsis">
-      Criando um servlet
+      Pacote
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#buscando-a-entidade" class="md-nav__link">
+  <a href="#instancia-singleton" class="md-nav__link">
     <span class="md-ellipsis">
-      Buscando a entidade
+      Instância Singleton
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acessando-o-servlet" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acessando o Servlet
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Acessando o Servlet">
+    <nav class="md-nav" aria-label="Instância Singleton">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#acessando-via-insomnia" class="md-nav__link">
+  <a href="#static-interceptadorutils-instance" class="md-nav__link">
     <span class="md-ellipsis">
-      Acessando via Insomnia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#acessando-via-script-de-operacoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Acessando via Script de operações
+      static InterceptadorUtils INSTANCE
     </span>
   </a>
   
@@ -832,6 +1069,180 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sessao-sam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sessão SAM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sessão SAM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samwhere-getsamwhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAMWhere getSamWhere()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variaveis-getvariaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variaveis getVariaveis()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entidades">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aac01-obtergclong-aac01id-session-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aac01 obterGC(Long aac01id, Session s)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aab10-obterusuariologado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aab10 obterUsuarioLogado()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aac10-obterempresaativa" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aac10 obterEmpresaAtiva()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-padrao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where Padrão
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where Padrão">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#string-obterwherepadraostring-classe" class="md-nav__link">
+    <span class="md-ellipsis">
+      String obterWherePadrao(String classe)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-obterwherepadraostring-classe-string-whereandor" class="md-nav__link">
+    <span class="md-ellipsis">
+      String obterWherePadrao(String classe, String whereAndOr)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#banco-de-dados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banco de Dados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banco de Dados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bancodadosutils-getacessoaobancosession-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      BancoDadosUtils getAcessoAoBanco(Session s)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametro-criarparametrosqlstring-chave-object-valor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parametro criarParametroSql(String chave, Object valor)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controle-de-fluxo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controle de Fluxo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controle de Fluxo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#void-interromperstring-mensagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      void interromper(String mensagem)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uso
+    </span>
+  </a>
   
 </li>
       
@@ -851,129 +1262,55 @@
 
 
 
-<h1 id="exemplo-servlet">Exemplo Servlet<a class="headerlink" href="#exemplo-servlet" title="Permanent link">&para;</a></h1>
-<p>Faremos um Servlet para buscar uma entidade pelo código recebido pelo corpo da requisição.</p>
-<h2 id="criando-um-servlet">Criando um servlet<a class="headerlink" href="#criando-um-servlet" title="Permanent link">&para;</a></h2>
-<p>Para criar um servlet abra o SAMDev, escolha o package, clique com o <code>botão direito</code>-&gt;<code>Novo</code>-&gt;<code>Servlet</code></p>
-<p><img alt="Criando servlet" src="../../img/Criando-servlet.png" title="criando-servlet" /></p>
-<p>Criará uma classe padrão</p>
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">BuscarEntidade</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServletBase</span><span class="w"> </span><span class="p">{</span>
+<h1 id="interceptadorutils">InterceptadorUtils<a class="headerlink" href="#interceptadorutils" title="Permanent link">&para;</a></h1>
+<p>Classe utilitária com métodos auxiliares para acesso às variáveis de sessão, entidades padrão, construção de cláusulas WHERE e integração com o banco de dados no contexto do SAM.</p>
+<h2 id="pacote">Pacote<a class="headerlink" href="#pacote" title="Permanent link">&para;</a></h2>
+<p><code>sam.server.samdev.utils</code></p>
+<hr />
+<h2 id="instancia-singleton">Instância Singleton<a class="headerlink" href="#instancia-singleton" title="Permanent link">&para;</a></h2>
+<h4 id="static-interceptadorutils-instance"><code>static InterceptadorUtils INSTANCE</code><a class="headerlink" href="#static-interceptadorutils-instance" title="Permanent link">&para;</a></h4>
+<p>Instância pública única da classe.</p>
+<hr />
+<h2 id="sessao-sam">Sessão SAM<a class="headerlink" href="#sessao-sam" title="Permanent link">&para;</a></h2>
+<h4 id="samwhere-getsamwhere"><code>SAMWhere getSamWhere()</code><a class="headerlink" href="#samwhere-getsamwhere" title="Permanent link">&para;</a></h4>
+<p>Retorna uma nova instância de <code>SAMWhere</code> com base nas variáveis da sessão atual.</p>
+<h4 id="variaveis-getvariaveis"><code>Variaveis getVariaveis()</code><a class="headerlink" href="#variaveis-getvariaveis" title="Permanent link">&para;</a></h4>
+<p>Retorna a instância atual de <code>Variaveis</code>, contendo contexto da sessão (usuário, empresa, etc).</p>
+<hr />
+<h2 id="entidades">Entidades<a class="headerlink" href="#entidades" title="Permanent link">&para;</a></h2>
+<h4 id="aac01-obtergclong-aac01id-session-s"><code>Aac01 obterGC(Long aac01id, Session s)</code><a class="headerlink" href="#aac01-obtergclong-aac01id-session-s" title="Permanent link">&para;</a></h4>
+<p>Obtém a entidade <code>Aac01</code> (provavelmente grupo de cálculo ou similar) pelo seu ID usando uma sessão ORM.</p>
+<h4 id="aab10-obterusuariologado"><code>Aab10 obterUsuarioLogado()</code><a class="headerlink" href="#aab10-obterusuariologado" title="Permanent link">&para;</a></h4>
+<p>Retorna o usuário logado atual (<code>Aab10</code>), obtido a partir das variáveis de sessão.</p>
+<h4 id="aac10-obterempresaativa"><code>Aac10 obterEmpresaAtiva()</code><a class="headerlink" href="#aac10-obterempresaativa" title="Permanent link">&para;</a></h4>
+<p>Retorna a empresa ativa (<code>Aac10</code>) associada à sessão atual.</p>
+<hr />
+<h2 id="where-padrao">Where Padrão<a class="headerlink" href="#where-padrao" title="Permanent link">&para;</a></h2>
+<h4 id="string-obterwherepadraostring-classe"><code>String obterWherePadrao(String classe)</code><a class="headerlink" href="#string-obterwherepadraostring-classe" title="Permanent link">&para;</a></h4>
+<p>Gera a cláusula WHERE padrão para uma entidade pelo nome da classe, utilizando <code>AND</code> por padrão.</p>
+<h4 id="string-obterwherepadraostring-classe-string-whereandor"><code>String obterWherePadrao(String classe, String whereAndOr)</code><a class="headerlink" href="#string-obterwherepadraostring-classe-string-whereandor" title="Permanent link">&para;</a></h4>
+<p>Permite definir o operador lógico (<code>AND</code> ou <code>OR</code>) para construir a cláusula WHERE padrão com base na classe informada.</p>
+<hr />
+<h2 id="banco-de-dados">Banco de Dados<a class="headerlink" href="#banco-de-dados" title="Permanent link">&para;</a></h2>
+<h4 id="bancodadosutils-getacessoaobancosession-s"><code>BancoDadosUtils getAcessoAoBanco(Session s)</code><a class="headerlink" href="#bancodadosutils-getacessoaobancosession-s" title="Permanent link">&para;</a></h4>
+<p>Instancia a classe <code>BancoDadosUtils</code> para acesso ao banco, já configurada com a sessão atual e <code>SAMWhere</code>.</p>
+<h4 id="parametro-criarparametrosqlstring-chave-object-valor"><code>Parametro criarParametroSql(String chave, Object valor)</code><a class="headerlink" href="#parametro-criarparametrosqlstring-chave-object-valor" title="Permanent link">&para;</a></h4>
+<p>Cria uma instância de <code>Parametro</code> para uso em queries parametrizadas.</p>
+<hr />
+<h2 id="controle-de-fluxo">Controle de Fluxo<a class="headerlink" href="#controle-de-fluxo" title="Permanent link">&para;</a></h2>
+<h4 id="void-interromperstring-mensagem"><code>void interromper(String mensagem)</code><a class="headerlink" href="#void-interromperstring-mensagem" title="Permanent link">&para;</a></h4>
+<p>Lança uma <code>ValidacaoException</code> com a mensagem informada. Usado para parar fluxos com validação explícita.</p>
+<hr />
+<h2 id="exemplo-de-uso">Exemplo de uso<a class="headerlink" href="#exemplo-de-uso" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">InterceptadorUtils</span><span class="w"> </span><span class="n">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">InterceptadorUtils</span><span class="p">.</span><span class="na">INSTANCE</span><span class="p">;</span>
 
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="nf">getNome</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="n">String</span><span class="w"> </span><span class="n">wherePadrao</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">utils</span><span class="p">.</span><span class="na">obterWherePadrao</span><span class="p">(</span><span class="s">&quot;sam.model.entities.fb.Fba01&quot;</span><span class="p">);</span>
+<span class="n">BancoDadosUtils</span><span class="w"> </span><span class="n">banco</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">utils</span><span class="p">.</span><span class="na">getAcessoAoBanco</span><span class="p">(</span><span class="n">session</span><span class="p">);</span>
 
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">DashboardMetadata</span><span class="w"> </span><span class="nf">getMetadata</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">executar</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">ResponseEntity</span><span class="p">.</span><span class="na">ok</span><span class="p">()</span>
-<span class="w">            </span><span class="p">.</span><span class="na">contentType</span><span class="p">(</span><span class="n">MediaType</span><span class="p">.</span><span class="na">APPLICATION_JSON</span><span class="p">)</span>
-<span class="w">            </span><span class="p">.</span><span class="na">body</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">usuarioValido</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">utils</span><span class="p">.</span><span class="na">interromper</span><span class="p">(</span><span class="s">&quot;Usuário não autorizado.&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div>
-<ul>
-<li><code>getNome</code> : Retorna o nome do Servlet.</li>
-<li><code>getMetadata</code> : Retorna dados do Servlet.</li>
-<li><code>executar</code> : função onde ficará a logica do Servlet.</li>
-</ul>
-<h2 id="buscando-a-entidade">Buscando a entidade<a class="headerlink" href="#buscando-a-entidade" title="Permanent link">&para;</a></h2>
-<p>Vamos alterar o metodo executar para receber o código, buscar a enidade e retornar a entidade pelo response da requisição.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">BuscarEntidade</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServletBase</span><span class="p">{</span>
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="nf">getNome</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;Buscar Entidade&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="n">DashboardMetadata</span><span class="w"> </span><span class="nf">getMetadata</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="n">ResponseEntity</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">executar</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">req</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">httpServletRequest</span><span class="p">.</span><span class="na">getReader</span><span class="p">().</span><span class="na">lines</span><span class="p">().</span><span class="na">collect</span><span class="p">(</span><span class="n">Collectors</span><span class="p">.</span><span class="na">joining</span><span class="p">());</span>
-<span class="w">        </span><span class="n">TableMap</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">JSonMapperCreator</span><span class="p">.</span><span class="na">create</span><span class="p">().</span><span class="na">read</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">TableMap</span><span class="o">&gt;</span><span class="p">()</span><span class="w"> </span><span class="p">{});</span>
-
-<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">abe01codigo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">body</span><span class="p">.</span><span class="na">getString</span><span class="p">(</span><span class="s">&quot;abe01codigo&quot;</span><span class="p">);</span>
-
-<span class="w">       </span><span class="n">Abe01</span><span class="w"> </span><span class="n">abe01</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSession</span><span class="p">().</span><span class="na">createCriteria</span><span class="p">(</span><span class="n">Abe01</span><span class="p">.</span><span class="na">class</span><span class="p">)</span>
-<span class="w">                </span><span class="p">.</span><span class="na">addFields</span><span class="p">(</span><span class="s">&quot;abe01id, abe01codigo, abe01na&quot;</span><span class="p">)</span>
-<span class="w">                </span><span class="p">.</span><span class="na">addWhere</span><span class="p">(</span><span class="n">Criterions</span><span class="p">.</span><span class="na">eq</span><span class="p">(</span><span class="s">&quot;abe01codigo&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">abe01codigo</span><span class="p">))</span>
-<span class="w">                </span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">ColumnType</span><span class="p">.</span><span class="na">ENTITY</span><span class="p">)</span>
-
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">ResponseEntity</span><span class="p">.</span><span class="na">ok</span><span class="p">()</span>
-<span class="w">                </span><span class="p">.</span><span class="na">contentType</span><span class="p">(</span><span class="n">MediaType</span><span class="p">.</span><span class="na">APPLICATION_JSON</span><span class="p">)</span>
-<span class="w">                </span><span class="p">.</span><span class="na">body</span><span class="p">(</span><span class="n">abe01</span><span class="p">);</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<ul>
-<li>
-<p><code>httpServletRequest.getReader().lines().collect(Collectors.joining());</code> : Le todo o conteúdo do corpo da requisição HTTP (geralmente enviado via POST ou PUT) como uma única String. </p>
-</li>
-<li>
-<p><code>TableMap body = JSonMapperCreator.create().read(req, new TypeReference&lt;TableMap&gt;() {});</code> : Fazer o parse do JSON (contido na string req) para um objeto da classe TableMap.</p>
-</li>
-</ul>
-<h2 id="acessando-o-servlet">Acessando o Servlet<a class="headerlink" href="#acessando-o-servlet" title="Permanent link">&para;</a></h2>
-<h3 id="acessando-via-insomnia">Acessando via Insomnia<a class="headerlink" href="#acessando-via-insomnia" title="Permanent link">&para;</a></h3>
-<p>Realizando uma request para o servler usando um programa externo como o Insomnia</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Request e Header</label><label for="__tabbed_1_2">Retorno</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><img alt="Request insomnia" src="../../img/request-insomnia.png" title="request-servlet" />
-<img alt="Headers insomnia" src="../../img/request-header-insomnia.png" title="request-header-servlet" /></p>
-</div>
-<div class="tabbed-block">
-<p><img alt="Response insomnia" src="../../img/response-insomnia.png" title="response-servlet" /></p>
-</div>
-</div>
-</div>
-<h3 id="acessando-via-script-de-operacoes">Acessando via Script de operações<a class="headerlink" href="#acessando-via-script-de-operacoes" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Script</label><label for="__tabbed_2_2">Retorno</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">ScriptAntigo</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ScriptBase</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="n">MultitecRootPanel</span><span class="w"> </span><span class="n">tarefa</span>
-<span class="w">    </span><span class="nd">@Override</span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">MultitecRootPanel</span><span class="w"> </span><span class="n">panel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">tarefa</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">panel</span>
-<span class="w">        </span><span class="nf">criarMenu</span><span class="p">(</span><span class="s">&quot;Servlet&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Buscar Entidade&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">buscarEntidade</span><span class="p">(),</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span>
-<span class="w">    </span><span class="p">}</span>
-
-<span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">buscarEntidade</span><span class="p">(){</span>
-<span class="w">        </span><span class="n">String</span><span class="w"> </span><span class="n">json</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">&#39;</span><span class="p">{</span><span class="s">&quot;abe01codigo&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;01&quot;</span><span class="p">}</span><span class="err">&#39;</span>
-<span class="w">        </span><span class="n">ObjectMapper</span><span class="w"> </span><span class="n">mapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ObjectMapper</span><span class="p">();</span>
-<span class="w">        </span><span class="n">JsonNode</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapper</span><span class="p">.</span><span class="na">readTree</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
-<span class="w">        </span><span class="n">WorkerRequest</span><span class="p">.</span><span class="na">create</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">tarefa</span><span class="p">.</span><span class="na">getWindow</span><span class="p">())</span>
-<span class="w">        </span><span class="p">.</span><span class="na">initialText</span><span class="p">(</span><span class="s">&quot;Buscando Entidade&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">dialogVisible</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">controllerEndPoint</span><span class="p">(</span><span class="s">&quot;servlet&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">methodEndPoint</span><span class="p">(</span><span class="s">&quot;run&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">param</span><span class="p">(</span><span class="s">&quot;name&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;equilibrio.separador.BuscarEntidade&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">header</span><span class="p">(</span><span class="s">&quot;ignore-body-decrypt&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">parseBody</span><span class="p">(</span><span class="n">body</span><span class="p">)</span>
-<span class="w">        </span><span class="p">.</span><span class="na">success</span><span class="p">((</span><span class="n">response</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="n">Abe01</span><span class="w"> </span><span class="n">abe01</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">response</span><span class="p">.</span><span class="na">parseResponse</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">TypeReference</span><span class="o">&lt;</span><span class="n">Abe01</span><span class="o">&gt;</span><span class="p">(){});</span>
-<span class="w">            </span><span class="n">exibirInformacao</span><span class="p">(</span><span class="s">&quot;codigo: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abe01</span><span class="p">.</span><span class="na">abe01codigo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;, na: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">abe01</span><span class="p">.</span><span class="na">abe01na</span><span class="p">)</span>
-<span class="w">        </span><span class="p">})</span>
-<span class="w">        </span><span class="p">.</span><span class="na">post</span><span class="p">();</span>
-
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<p><img alt="Response script" src="../../img/response-script.png" title="response-script" /></p>
-</div>
-</div>
-</div>
 
 
 
