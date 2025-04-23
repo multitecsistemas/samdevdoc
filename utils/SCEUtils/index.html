@@ -1003,15 +1003,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exemplo-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo de uso
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1405,15 +1396,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#exemplo-de-uso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exemplo de uso
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1484,14 +1466,6 @@
 <p>Versão obsoleta para buscar o PM retroativo.</p>
 <h4 id="bigdecimal-buscarpmretroativolong-abm01id-localdate-bcc01data-long-bcc01id"><code>BigDecimal buscarPMRetroativo(Long abm01id, LocalDate bcc01data, Long bcc01id)</code><a class="headerlink" href="#bigdecimal-buscarpmretroativolong-abm01id-localdate-bcc01data-long-bcc01id" title="Permanent link">&para;</a></h4>
 <p>Versão atual para buscar o preço médio do lançamento anterior.</p>
-<hr />
-<h2 id="exemplo-de-uso">Exemplo de uso<a class="headerlink" href="#exemplo-de-uso" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">SCEUtils</span><span class="w"> </span><span class="n">sceUtils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SCEUtils</span><span class="p">(</span><span class="n">session</span><span class="p">,</span><span class="w"> </span><span class="n">samWhere</span><span class="p">,</span><span class="w"> </span><span class="n">sceService</span><span class="p">);</span>
-
-<span class="n">BigDecimal</span><span class="w"> </span><span class="n">saldo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sceUtils</span><span class="p">.</span><span class="na">saldoEstoqueItemResumido</span><span class="p">(</span><span class="mi">101L</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="n">List</span><span class="o">&lt;</span><span class="n">TableMap</span><span class="o">&gt;</span><span class="w"> </span><span class="n">analitico</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sceUtils</span><span class="p">.</span><span class="na">saldoEstoqueItemAnalitico</span><span class="p">(</span><span class="mi">101L</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<span class="n">BigDecimal</span><span class="w"> </span><span class="n">precoMedio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sceUtils</span><span class="p">.</span><span class="na">precoMedioUnitarioAtual</span><span class="p">(</span><span class="mi">101L</span><span class="p">,</span><span class="w"> </span><span class="mi">10L</span><span class="p">);</span>
-</code></pre></div>
 
 
 

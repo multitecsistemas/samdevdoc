@@ -1370,7 +1370,7 @@
 <p>Soma e subtrai valores de eventos de CAE, considerando seu fator de compensação (<code>abh2101cvr</code>).</p>
 <hr />
 <h2 id="exemplo-de-uso">Exemplo de uso<a class="headerlink" href="#exemplo-de-uso" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">HoleriteUtils</span><span class="w"> </span><span class="n">util</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">HoleriteUtils</span><span class="p">(</span><span class="n">session</span><span class="p">,</span><span class="w"> </span><span class="n">samWhere</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="n">HoleriteUtils</span><span class="w"> </span><span class="n">util</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getHoleriteUtils</span><span class="p">();</span>
 
 <span class="n">Abh80</span><span class="w"> </span><span class="n">trabalhador</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">util</span><span class="p">.</span><span class="na">findAbh80ByUniqueKey</span><span class="p">(</span><span class="s">&quot;000123&quot;</span><span class="p">);</span>
 <span class="n">Integer</span><span class="w"> </span><span class="n">qtdeDependentes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">util</span><span class="p">.</span><span class="na">findAbh8002QtdeDependentes</span><span class="p">(</span><span class="n">trabalhador</span><span class="p">.</span><span class="na">getId</span><span class="p">());</span>
