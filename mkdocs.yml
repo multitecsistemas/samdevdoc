@@ -8,6 +8,7 @@ nav:
     - Processos:
         - Tipos de Processos: tiposProcessos.md
         - Listagens: relatorios.md
+        - Exportação de Dados: exportacaoDados.md
         - Scripts de Operação: scripts.md
         - Formulas: formulas.md
         - Servlet: servlet.md
