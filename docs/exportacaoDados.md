@@ -28,3 +28,13 @@ DadosParaDownload gerarTxt(String nome, String txt)
 ``` java
 DadosParaDownload gerarCsv(String nome, String csv)
 ```
+
+### gerarDados
+| Nome           | Descrição         | 
+| -------------- | ------------------|
+| byte[] dados   | bytes do arquivo  |
+| MediaType type | tipo do arquivo   |
+
+``` java
+DadosParaDownload gerarDados(String nome, byte[] dados, MediaType type)
+```
