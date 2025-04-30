@@ -835,18 +835,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sobreescrever-metodo-windowload" class="md-nav__link">
+  <a href="#sobrescrever-metodo-windowload" class="md-nav__link">
     <span class="md-ellipsis">
-      Sobreescrever metodo windowLoad
+      Sobrescrever metodo windowLoad
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sobreescrever-metodo-cancelar" class="md-nav__link">
+  <a href="#sobrescrever-metodo-cancelar" class="md-nav__link">
     <span class="md-ellipsis">
-      Sobreescrever metodo cancelar
+      Sobrescrever método cancelar
     </span>
   </a>
   
@@ -889,9 +889,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sobreescrever-keylistener-de-componentes" class="md-nav__link">
+  <a href="#sobrescrever-keylistener-de-componentes" class="md-nav__link">
     <span class="md-ellipsis">
-      Sobreescrever KeyListener de componentes
+      Sobrescrever KeyListener de componentes
     </span>
   </a>
   
@@ -924,10 +924,10 @@
 
 <h1 id="exemplos-script-de-operacao">Exemplos Script de Operação<a class="headerlink" href="#exemplos-script-de-operacao" title="Permanent link">&para;</a></h1>
 <h2 id="ocultar-coluna-da-spread">Ocultar coluna da spread<a class="headerlink" href="#ocultar-coluna-da-spread" title="Permanent link">&para;</a></h2>
-<p>Ocultando algumas colunas da spread, o metodo ocultarColunas recebe a spread e os indices das colunas a serem ocultadas</p>
+<p>Ocultando algumas colunas da spread, o método ocultarColunas recebe a spread e os indices das colunas a serem ocultadas</p>
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>Este script somente OCULTA a coluna, sendo assim é necessário considerar a mesma na contagem do indice</p>
+<p>Este script somente OCULTA a coluna, sendo assim é necessário considerar a mesma na contagem do índice</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nd">@Override</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">MultitecRootPanel</span><span class="w"> </span><span class="n">tarefa</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -962,12 +962,12 @@ ou evento, para remover um campo livre da spread.</p>
 <span class="w">        </span><span class="n">tela</span><span class="p">.</span><span class="na">setBounds</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tela</span><span class="p">.</span><span class="na">getBounds</span><span class="p">().</span><span class="na">x</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tela</span><span class="p">.</span><span class="na">getBounds</span><span class="p">().</span><span class="na">y</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tela</span><span class="p">.</span><span class="na">getBounds</span><span class="p">().</span><span class="na">width</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">tela</span><span class="p">.</span><span class="na">getBounds</span><span class="p">().</span><span class="na">height</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">50</span><span class="p">);</span>
 <span class="w">    </span><span class="p">}</span>
 </code></pre></div>
-<h2 id="sobreescrever-metodo-windowload">Sobreescrever metodo windowLoad<a class="headerlink" href="#sobreescrever-metodo-windowload" title="Permanent link">&para;</a></h2>
-<p>O metodo windowLoad é executado no momento que a tela está sendo carregada, algumas alterações 
-em tela precisam ser feitas após esse metodo.</p>
+<h2 id="sobrescrever-metodo-windowload">Sobrescrever metodo windowLoad<a class="headerlink" href="#sobrescrever-metodo-windowload" title="Permanent link">&para;</a></h2>
+<p>O método windowLoad é executado no momento que a tela está sendo carregada, algumas alterações 
+em tela precisam ser feitas após esse método.</p>
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>Lembre-se de sempre executar o windowLoad original antes do seu codigo</p>
+<p>Lembre-se de sempre executar o windowLoad original antes do seu código</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Script</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">sam</span><span class="p">.</span><span class="na">swing</span><span class="p">.</span><span class="na">ScriptBase</span><span class="p">{</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Runnable</span><span class="w">  </span><span class="n">windowLoadOriginal</span><span class="p">;</span>
@@ -984,11 +984,11 @@ em tela precisam ser feitas após esse metodo.</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="sobreescrever-metodo-cancelar">Sobreescrever metodo cancelar<a class="headerlink" href="#sobreescrever-metodo-cancelar" title="Permanent link">&para;</a></h2>
-<p>Sobrescrever o metodo cancelar de uma tela. Podendo ser usado para validações ou processar dados.</p>
+<h2 id="sobrescrever-metodo-cancelar">Sobrescrever método cancelar<a class="headerlink" href="#sobrescrever-metodo-cancelar" title="Permanent link">&para;</a></h2>
+<p>Sobrescrever o método cancelar de uma tela. Podendo ser usado para validações ou processar dados.</p>
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>Lembre-se de sempre executar o cancelar original depois do seu codigo</p>
+<p>Lembre-se de sempre executar o cancelar original depois do seu código</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Script</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">sam</span><span class="p">.</span><span class="na">swing</span><span class="p">.</span><span class="na">ScriptBase</span><span class="p">{</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">Runnable</span><span class="w">  </span><span class="n">cancelarOriginal</span><span class="p">;</span>
@@ -1027,7 +1027,7 @@ em tela precisam ser feitas após esse metodo.</p>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="alterar-funcao-f5-da-spread">Alterar função F5 da spread<a class="headerlink" href="#alterar-funcao-f5-da-spread" title="Permanent link">&para;</a></h2>
-<p>É possível executar uma função após o F5 em uma spread, servindo para validar ou preencher algum campo de forma automatica.</p>
+<p>É possível executar uma função após o F5 em uma spread, servindo para validar ou preencher algum campo de forma automática.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Script</span><span class="w">  </span><span class="kd">extends</span><span class="w"> </span><span class="n">sam</span><span class="p">.</span><span class="na">swing</span><span class="p">.</span><span class="na">ScriptBase</span><span class="p">{</span>
 <span class="w">    </span><span class="nd">@Override</span>
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">MultitecRootPanel</span><span class="w"> </span><span class="n">tarefa</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -1066,11 +1066,11 @@ em tela precisam ser feitas após esse metodo.</p>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
-<h2 id="sobreescrever-keylistener-de-componentes">Sobreescrever KeyListener de componentes<a class="headerlink" href="#sobreescrever-keylistener-de-componentes" title="Permanent link">&para;</a></h2>
+<h2 id="sobrescrever-keylistener-de-componentes">Sobrescrever KeyListener de componentes<a class="headerlink" href="#sobrescrever-keylistener-de-componentes" title="Permanent link">&para;</a></h2>
 <p>É possível sobreescrever o KeyListener de um determinado componente.</p>
 <div class="admonition warning">
 <p class="admonition-title">Atenção</p>
-<p>Lembre-se de sempre executar o KeyListener original antes ou depois do seu codigo.</p>
+<p>Lembre-se de sempre executar o KeyListener original antes ou depois do seu código.</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Script</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">sam</span><span class="p">.</span><span class="na">swing</span><span class="p">.</span><span class="na">ScriptBase</span><span class="p">{</span>
 <span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">KeyListener</span><span class="o">[]</span><span class="w"> </span><span class="n">keyListenersOriginais</span>
@@ -1096,13 +1096,13 @@ em tela precisam ser feitas após esse metodo.</p>
 <span class="w">    </span><span class="p">}</span>
 
 <span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">keyListenerCustom</span><span class="p">(</span><span class="n">KeyEvent</span><span class="w"> </span><span class="n">event</span><span class="p">){</span>
-<span class="w">        </span><span class="c1">//Realize sua logica aqui antes do KeyListener original</span>
+<span class="w">        </span><span class="c1">//Realize sua lógica aqui antes do KeyListener original</span>
 <span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">keyListenersOriginais</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">keyListenersOriginais</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">){</span>
 <span class="w">            </span><span class="k">for</span><span class="p">(</span><span class="n">KeyListener</span><span class="w"> </span><span class="n">listener</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="na">keyListenersOriginais</span><span class="p">){</span>
 <span class="w">                </span><span class="n">listener</span><span class="p">.</span><span class="na">keyPressed</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">        </span><span class="c1">//Realize sua logica aqui depois do KeyListener original</span>
+<span class="w">        </span><span class="c1">//Realize sua lógica aqui depois do KeyListener original</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>

@@ -1191,9 +1191,9 @@
 
 <h1 id="scripts-de-operacao">Scripts de Operação<a class="headerlink" href="#scripts-de-operacao" title="Permanent link">&para;</a></h1>
 <h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
-<p>Dentre os Script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo texto, campo numérico, campo combo, etc. Cada um destes componentes possuem algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.</p>
+<p>Dentre os script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo de texto, campo numérico, campo combo, etc. Cada um destes componentes possui algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.</p>
 <p>Um Script de Operação permite a manipulação dos componentes de tela do SAM, interferir em ações ou processos ou até mesmo criar componentes, ações ou processos customizados.</p>
-<p>Os componentes de tela do SAM são construidos a partir de componentes <code>Swing</code>, sendo assim, os métodos aplicaveis aos componentes swing são aplicados aos componentes do SAM.</p>
+<p>Os componentes de tela do SAM são construídos a partir de componentes <code>Swing</code>, sendo assim, os métodos aplicáveis aos componentes swing são aplicados aos componentes do SAM.</p>
 <p>As tarefas do SAM são divididas em dois tipos:</p>
 <ol>
 <li>Cadastros</li>
@@ -1393,7 +1393,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="9:1"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Exemplo</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">executarSalvarOuExcluir</span><span class="p">(</span><span class="s">&quot;UPDATE Abh80 SET abh80nome = &#39;José&#39;)</span>
+<div class="highlight"><pre><span></span><code><span class="n">executarSalvarOuExcluir</span><span class="p">(</span><span class="s">&quot;UPDATE Abh80 SET abh80nome = &#39;José&#39;&quot;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -1451,7 +1451,7 @@
 </tr>
 <tr>
 <td>ActionListener</td>
-<td>Ffunção que será executada ao clicar no menu</td>
+<td>Função que será executada ao clicar no menu</td>
 </tr>
 <tr>
 <td>KeyStroke</td>

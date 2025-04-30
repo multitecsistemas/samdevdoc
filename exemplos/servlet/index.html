@@ -903,10 +903,10 @@
 <ul>
 <li><code>getNome</code> : Retorna o nome do Servlet.</li>
 <li><code>getMetadata</code> : Retorna dados do Servlet.</li>
-<li><code>executar</code> : função onde ficará a logica do Servlet.</li>
+<li><code>executar</code> : função onde ficará a lógica do Servlet.</li>
 </ul>
 <h2 id="buscando-a-entidade">Buscando a entidade<a class="headerlink" href="#buscando-a-entidade" title="Permanent link">&para;</a></h2>
-<p>Vamos alterar o metodo executar para receber o código, buscar a enidade e retornar a entidade pelo response da requisição.</p>
+<p>Vamos alterar o método executar para receber o código, buscar a entidade e retornar a entidade pelo response da requisição.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">BuscarEntidade</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServletBase</span><span class="p">{</span>
 <span class="w">    </span><span class="nd">@Override</span>
 <span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="nf">getNome</span><span class="p">()</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
@@ -938,15 +938,15 @@
 </code></pre></div>
 <ul>
 <li>
-<p><code>httpServletRequest.getReader().lines().collect(Collectors.joining());</code> : Le todo o conteúdo do corpo da requisição HTTP (geralmente enviado via POST ou PUT) como uma única String. </p>
+<p><code>httpServletRequest.getReader().lines().collect(Collectors.joining());</code> : Lê todo o conteúdo do corpo da requisição HTTP (geralmente enviado via POST ou PUT) como uma única String. </p>
 </li>
 <li>
-<p><code>TableMap body = JSonMapperCreator.create().read(req, new TypeReference&lt;TableMap&gt;() {});</code> : Fazer o parse do JSON (contido na string req) para um objeto da classe TableMap.</p>
+<p><code>TableMap body = JSonMapperCreator.create().read(req, new TypeReference&lt;TableMap&gt;() {});</code> : Faz o parse do JSON (contido na string req) para um objeto da classe TableMap.</p>
 </li>
 </ul>
 <h2 id="acessando-o-servlet">Acessando o Servlet<a class="headerlink" href="#acessando-o-servlet" title="Permanent link">&para;</a></h2>
 <h3 id="acessando-via-insomnia">Acessando via Insomnia<a class="headerlink" href="#acessando-via-insomnia" title="Permanent link">&para;</a></h3>
-<p>Realizando uma request para o servler usando um programa externo como o Insomnia</p>
+<p>Realizando uma request para o servlet usando um programa externo como o Insomnia</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Request e Header</label><label for="__tabbed_1_2">Retorno</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
