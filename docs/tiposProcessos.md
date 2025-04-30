@@ -6,7 +6,7 @@ Abaixo você entenderá melhor sobre alguns processos que podem ser customizados
 
 ----
 
-O processo de Extração de dados consiste em se comunicar com bancos de dados para capturar os dados que serão disponibilizados para o sistema destino. Toda a extração de informações da base de dados são através de consultas, listagens, relatórios, resumos, estatísticas, demonstrações, análises, documentos fiscais e não fiscais etc.
+O processo de Extração de dados consiste em se comunicar com bancos de dados para capturar os dados que serão disponibilizados para o sistema destino. Toda a extração de informações da base de dados é através de consultas, listagens, relatórios, resumos, estatísticas, demonstrações, análises, documentos fiscais e não fiscais etc.
 
 ### Listagens
 
@@ -18,7 +18,7 @@ As Listagens são documentos que disponibilizam informações claras e objetivas
 
 ----
 
-Esta ferramenta auxilia na tomada de decisão da empresa, portanto, é importante o desenvolvedor, conhecer este meio mais fácil para obter melhores resultados. O Cubo de Decisões possibilita visualizar as atividades da empresa de modo gráfico e simplificado, bem como, o seu desempenho, potenciais riscos ou desvios do planejado e a capacidade de obter indicadores de gestão.
+Esta ferramenta auxilia na tomada de decisão da empresa, portanto, é importante o desenvolvedor conhecer este meio mais fácil para obter melhores resultados. O Cubo de Decisões possibilita visualizar as atividades da empresa de modo gráfico e simplificado, bem como o seu desempenho, potenciais riscos ou desvios do planejado e a capacidade de obter indicadores de gestão.
 
 ### Gedgets
 
@@ -42,19 +42,19 @@ Uma fórmula é um método prático de resolver um assunto, dar instruções ou 
 
 ----
 
-Interceptor, como o próprio nome sugere, nos permite de forma bem simples interceptar e configurar requisições antes delas serem disparadas para o banco de dados. Isso possibilita fazer uma imensidão de coisas, um exemplo seria validar se a requisição está de acordo com os padrões de cadastro de uma determinada empresa, ou de repente bloquear determinados usuário de realizar estas requisições, e até tratar objetos antes de terminar a requisição. As possibilidades são inúmeras.
+Interceptor, como o próprio nome sugere, nos permite de forma bem simples interceptar e configurar requisições antes delas serem disparadas para o banco de dados. Isso possibilita fazer uma imensidão de coisas, um exemplo seria validar se a requisição está de acordo com os padrões de cadastro de uma determinada empresa, ou de repente bloquear determinados usuários de realizar estas requisições, e até tratar objetos antes de terminar a requisição. As possibilidades são inúmeras.
 
 ### Scripts de Operações
 
 ----
 
-<p style="text-align: justify">Dentre os Script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo texto, campo numérico, campo combo, etc. Cada um destes componentes possuem algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.</p>
+<p style="text-align: justify">Dentre os script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo texto, campo numérico, campo combo, etc. Cada um destes componentes possui algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.</p>
 
 ## Integração com o SAM
 
 ----
 
-A integração com o SAM pode ser realizada fazendo ou recebendo requisições de outros sistemas, APIs, serviços etc. Essa integração pode ser realizado através das SERVLETS.
+A integração com o SAM pode ser realizada fazendo ou recebendo requisições de outros sistemas, APIs, serviços etc. Essa integração pode ser realizada através das SERVLETS.
 
 ### Servlets
 

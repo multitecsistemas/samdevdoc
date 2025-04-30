@@ -34,11 +34,11 @@ public class BuscarEntidade extends ServletBase {
 
 - `getNome` : Retorna o nome do Servlet.
 - `getMetadata` : Retorna dados do Servlet.
-- `executar` : função onde ficará a logica do Servlet.
+- `executar` : função onde ficará a lógica do Servlet.
 
 ## Buscando a entidade
 
-Vamos alterar o metodo executar para receber o código, buscar a enidade e retornar a entidade pelo response da requisição.
+Vamos alterar o método executar para receber o código, buscar a entidade e retornar a entidade pelo response da requisição.
 
 ``` java
 class BuscarEntidade extends ServletBase{
@@ -71,15 +71,15 @@ class BuscarEntidade extends ServletBase{
 }
 ```
 
-- `httpServletRequest.getReader().lines().collect(Collectors.joining());` : Le todo o conteúdo do corpo da requisição HTTP (geralmente enviado via POST ou PUT) como uma única String. 
+- `httpServletRequest.getReader().lines().collect(Collectors.joining());` : Lê todo o conteúdo do corpo da requisição HTTP (geralmente enviado via POST ou PUT) como uma única String. 
 
-- `TableMap body = JSonMapperCreator.create().read(req, new TypeReference<TableMap>() {});` : Fazer o parse do JSON (contido na string req) para um objeto da classe TableMap.
+- `TableMap body = JSonMapperCreator.create().read(req, new TypeReference<TableMap>() {});` : Faz o parse do JSON (contido na string req) para um objeto da classe TableMap.
 
 ## Acessando o Servlet
 
 ### Acessando via Insomnia
 
-Realizando uma request para o servler usando um programa externo como o Insomnia
+Realizando uma request para o servlet usando um programa externo como o Insomnia
 
 === "Request e Header"
     ![Request insomnia](../img/request-insomnia.png "request-servlet")

@@ -2,13 +2,13 @@
 
 ## Introdução
 
-A exportação de dados pode ser feita principalmente em XML, Txt, CSV, permitindo a exportação em outro formato.
+A exportação de dados pode ser feita principalmente nos formatos XML, TXT e CSV, permitindo também a exportação em outros formatos.
 
 ## Filtros
 
-Igual em uma listagem a exportação de dados pode ter ou não filtros usando os [componentes das listagens](/relatorios/#componentes)
+Assim como em uma listagem, a exportação de dados pode ter ou não filtros, utilizando os [componentes das listagens](/relatorios/#componentes)
 
-## Metodos
+## Métodos
 
 | Nome         | Descrição        | 
 | ------------ | -----------------|

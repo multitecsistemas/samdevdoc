@@ -1,8 +1,8 @@
-# Formulas
+# Fórmulas
 
 ## Introdução
 
-Uma fórmula é um método prático de resolver um assunto, dar instruções ou expressar uma operação. Em algumas tarefas do SAM4 o processamento de dados pode ser feito de forma customizada, ou seja, cada empresa pode processar livremente. Essas customizações são feitas através das fórmulas. Por exemplo, cálculo de documentos, cálculo de folha de pagamento, manipulação de valores de itens no estoque.
+Uma fórmula é um método prático de resolver um assunto, dar instruções ou expressar uma operação. Em algumas tarefas do SAM4 o processamento de dados pode ser feito de forma customizada, ou seja, cada empresa pode processar livremente. Essas customizações são feitas por meio das fórmulas. Por exemplo, cálculo de documentos, cálculo de folha de pagamento, manipulação de valores de itens no estoque.
 
 ## Métodos
 
@@ -26,7 +26,7 @@ Este método retorna um objeto do tipo Aab10 contendo os dados do usuário logad
 
 ### `getAcessoAoBanco`
 ---
-Este método retorna uma coleção de métodos uteis para manipulação do banco de dados descritos a baixo:
+Este método retorna uma coleção de métodos úteis para manipulação do banco de dados, descritos abaixo:
 
 | Metodo                         | Descrição                                                                                                       |
 | -------------------------------| ----------------------------------------------------------------------------------------------------------------|
@@ -148,9 +148,9 @@ Este método lança uma exceção ao processo, interrompendo-o.
 ### get()
 ----
 
-Quando uma Listagem é executada, alguns dados podem ser enviados para o processo, estes dados são conteudo dos filtros. O envio deste dado é feito através de um Mapa de chave e valor, para recuperar estes dados utilizamos o método `get()` e suas variações.
+Quando uma Listagem é executada, alguns dados podem ser enviados para o processo, estes dados são conteúdo dos filtros. O envio deste dado é feito através de um Mapa de chave e valor, para recuperar estes dados utilizamos o método `get()` e suas variações.
 
-Exemplo: Em uma listagem existe um campo de data e foi atribuido o nome `dataDeInicio`.
+Exemplo: Em uma listagem existe um campo de data e foi atribuído o nome dataDeInicio.
 
 ``` html
 <m-date label="Data de Inicio" v-model="filtros.dataDeInicio" />
@@ -171,3 +171,4 @@ Este método por si só retorna um objeto. Contamos com alguma variações deste
 | getInteger()        | Inteiro           | getIntervaloDatas() | Array de Datas    |
 | getLong()           | Longo             | getListLong()       | Lista de Longos   |
 | getBigDecimal()     | Decimal           | getListInteger()    | Lista de Inteiros |
+

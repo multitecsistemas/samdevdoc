@@ -2,10 +2,10 @@
 
 ## Ocultar coluna da spread
 
-Ocultando algumas colunas da spread, o metodo ocultarColunas recebe a spread e os indices das colunas a serem ocultadas
+Ocultando algumas colunas da spread, o método ocultarColunas recebe a spread e os indices das colunas a serem ocultadas
 
 !!! warning "Atenção"
-    Este script somente OCULTA a coluna, sendo assim é necessário considerar a mesma na contagem do indice
+    Este script somente OCULTA a coluna, sendo assim é necessário considerar a mesma na contagem do índice
 
 ``` java
     @Override
@@ -50,13 +50,13 @@ Altera o tamanho da tela, largura e altura.
     }
 ```
 
-## Sobreescrever metodo windowLoad
+## Sobrescrever metodo windowLoad
 
-O metodo windowLoad é executado no momento que a tela está sendo carregada, algumas alterações 
-em tela precisam ser feitas após esse metodo.
+O método windowLoad é executado no momento que a tela está sendo carregada, algumas alterações 
+em tela precisam ser feitas após esse método.
 
 !!! warning "Atenção"
-    Lembre-se de sempre executar o windowLoad original antes do seu codigo
+    Lembre-se de sempre executar o windowLoad original antes do seu código
 
 ``` java
 public class Script extends sam.swing.ScriptBase{
@@ -75,12 +75,12 @@ public class Script extends sam.swing.ScriptBase{
 }
 ```
 
-## Sobreescrever metodo cancelar
+## Sobrescrever método cancelar
 
-Sobrescrever o metodo cancelar de uma tela. Podendo ser usado para validações ou processar dados.
+Sobrescrever o método cancelar de uma tela. Podendo ser usado para validações ou processar dados.
 
 !!! warning "Atenção"
-    Lembre-se de sempre executar o cancelar original depois do seu codigo
+    Lembre-se de sempre executar o cancelar original depois do seu código
 
 ``` java
 public class Script extends sam.swing.ScriptBase{
@@ -126,7 +126,7 @@ public class Script  extends sam.swing.ScriptBase{
 
 ## Alterar função F5 da spread
 
-É possível executar uma função após o F5 em uma spread, servindo para validar ou preencher algum campo de forma automatica.
+É possível executar uma função após o F5 em uma spread, servindo para validar ou preencher algum campo de forma automática.
 
 ``` java
 class Script  extends sam.swing.ScriptBase{
@@ -176,12 +176,12 @@ class Script extends sam.swing.ScriptBase{
 }
 ```
 
-## Sobreescrever KeyListener de componentes
+## Sobrescrever KeyListener de componentes
 
 É possível sobreescrever o KeyListener de um determinado componente.
 
 !!! warning "Atenção"
-    Lembre-se de sempre executar o KeyListener original antes ou depois do seu codigo.
+    Lembre-se de sempre executar o KeyListener original antes ou depois do seu código.
 
 ``` java
 class Script extends sam.swing.ScriptBase{
@@ -208,13 +208,13 @@ class Script extends sam.swing.ScriptBase{
     }
 
     public void keyListenerCustom(KeyEvent event){
-        //Realize sua logica aqui antes do KeyListener original
+        //Realize sua lógica aqui antes do KeyListener original
         if(this.keyListenersOriginais != null && this.keyListenersOriginais.size() > 0){
             for(KeyListener listener in this.keyListenersOriginais){
                 listener.keyPressed(event)
             }
         }
-        //Realize sua logica aqui depois do KeyListener original
+        //Realize sua lógica aqui depois do KeyListener original
     }
 }
 ```

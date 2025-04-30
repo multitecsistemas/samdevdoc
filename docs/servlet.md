@@ -2,14 +2,14 @@
 
 ## Introdução
 
-Uma Servlet dá uma ideia de servidor pequeno cujo objetivo basicamente é receber requisições HTTP, processá-las e responder ao cliente, essa resposta pode ser um JSON, um HTML, uma imagem etc.
+Uma Servlet funciona como um pequeno servidor, cujo objetivo é basicamente receber requisições HTTP, processá-las e responder ao cliente, essa resposta pode ser um JSON, um HTML, uma imagem etc.
 
-## Hearders
+## Headers
 
 | Nome                | Valor               | Função                                       | Requerido |
 |---------------------|---------------------|----------------------------------------------|-----------|
 | api-user-header     | Chave da API do SAM | Autenticar a requisição                      | SIM       |
-| ignore-body-decrypt | `true` ou `false`   | ignora a criptografia do corpo da requisição | NÃO       |
+| ignore-body-decrypt | `true` ou `false`   | Ignora a criptografia do corpo da requisição | NÃO       |
 
 !!! info "Saiba Mais"
 	Para conhecer mais, veja alguns [exemplos](./exemplos/servlet.md). 
@@ -36,7 +36,7 @@ Este método retorna um objeto do tipo Aab10 contendo os dados do usuário logad
 
 ### `getAcessoAoBanco`
 ---
-Este método retorna uma coleção de métodos uteis para manipulação do banco de dados descritos a baixo:
+Este método retorna uma coleção de métodos úteis para manipulação do banco de dados descritos abaixo:
 
 | Metodo                         | Descrição                                                                                                       |
 | -------------------------------| ----------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ Este método converte o corpo da requisição enviado a um Servlet para um objet
 
 ### `getParametroRequisicao`
 ----
-Este método retorna o conteudo de um parêmetro enviado ao Servlet via URL.
+Este método retorna o conteúdo de um parâmetro enviado ao Servlet via URL.
 
 **Argumentos:**
 

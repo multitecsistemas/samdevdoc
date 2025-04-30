@@ -7,7 +7,7 @@ A geração de listagens é uma funcionalidade essencial para apresentar dados d
 
 ## Extração de Dados
 
-O processo de Extração de Dados consiste em se comunicar com bancos de dados para capturar os registros que serão disponibilizados para geração de relatórios. Todas as extrações são realizadas por meio de consultas SQL ou chamadas a procedimentos armazenados, e podem incluir:
+O processo de extração de dados consiste em se comunicar com bancos de dados para capturar os registros que serão disponibilizados para geração de relatórios. Todas as extrações são realizadas por meio de consultas SQL ou chamadas a procedimentos armazenados, e podem incluir:
 
 - Consultas livres
 - Listagens gerais ou filtradas
@@ -26,7 +26,7 @@ Os dados extraídos devem ser precisos, atualizados e refletir o estado real do 
 
 ## Componentes
 
-Estes componentes são baseados na sintaxe das tags HTML, são construidos a partir do framework [VUE.js](https://br.vuejs.org/v2/guide/index.html) e podem ser utilizados para a criação de filtros que são utilizados nos processos de Extração de Dados.
+Estes componentes são baseados na sintaxe das tags HTML, são construídos a partir do framework [VUE.js](https://br.vuejs.org/v2/guide/index.html) e podem ser utilizados para a criação de filtros que são utilizados nos processos de Extração de Dados.
 
 ### Atributos Default
 
@@ -131,10 +131,10 @@ Exemplo:
 ![Campo m-date-interval!](img/m-date-interval.png "m-date-interval")
 
 ``` html
-<m-date-interval min="01/01/2000" max="31/12/2100" label="Selecione duas data" v-model="filtros.data" :required="true" />
+<m-date-interval min="01/01/2000" max="31/12/2100" label="Selecione duas datas" v-model="filtros.data" :required="true" />
 ```
 
-### `m-selec`
+### `m-select`
 
 ----
 
@@ -334,7 +334,7 @@ Este método retorna um objeto do tipo Aab10 contendo os dados do usuário logad
 
 ### `getAcessoAoBanco`
 ---
-Este método retorna uma coleção de métodos uteis para manipulação do banco de dados descritos a baixo:
+Este método retorna uma coleção de métodos úteis para manipulação do banco de dados descritos abaixo:
 
 | Metodo                         | Descrição                                                                                                       |
 | -------------------------------| ----------------------------------------------------------------------------------------------------------------|
@@ -456,15 +456,15 @@ Este método lança uma exceção ao processo, interrompendo-o.
 ### get()
 ----
 
-Quando uma Listagem é executada, alguns dados podem ser enviados para o processo, estes dados são conteudo dos filtros. O envio deste dado é feito através de um Mapa de chave e valor, para recuperar estes dados utilizamos o método `get()` e suas variações.
+Quando uma Listagem é executada, alguns dados podem ser enviados para o processo, estes dados são conteúdo dos filtros. O envio deste dado é feito através de um Mapa de chave e valor, para recuperar estes dados utilizamos o método `get()` e suas variações.
 
-Exemplo: Em uma listagem existe um campo de data e foi atribuido o nome `dataDeInicio`.
+Exemplo: Em uma listagem existe um campo de data e foi atribuído o nome `dataDeInicio`.
 
 ``` html
 <m-date label="Data de Inicio" v-model="filtros.dataDeInicio" />
 ```
 
-Para recuperar o conteudo deste campo a partir do código groovy utilizamos o método `get()`.
+Para recuperar o conteúdo deste campo a partir do código groovy utilizamos o método `get()`.
 
 ``` groovy
 def dataDeInicio = get("dataDeInicio")
@@ -483,13 +483,13 @@ Este método por si só retorna um objeto. Contamos com alguma variações deste
 ### `trunc`
 ----
 
-Este metodo trunca um valor Decimal para a quantidade de casas definido no argumento.
+Este método trunca um valor Decimal para a quantidade de casas definido no argumento.
 
 **Argumentos:**
 
 | Tipo       | Descrição              |
 |------------|------------------------|
-| BigDecimal | Dicimal a arredondar   |
+| BigDecimal | Decimal a arredondar   |
 | int        | Casas decimais         |
 
 === "Exemplo"

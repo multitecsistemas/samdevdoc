@@ -2,11 +2,11 @@
 
 ## Introdução 
 
-Dentre os Script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo texto, campo numérico, campo combo, etc. Cada um destes componentes possuem algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.
+Dentre os script do SAM o Script de Operações é o único que não é desenvolvido pela ferramenta SAMDEV, ele é construído dentro da própria tarefa. Com ele o desenvolvedor pode criar regras operacionais diferentes para cada tarefa, manipular campos da tela, fazer validações etc. Basicamente o desenvolvedor consegue manipular toda a tarefa. As telas do SAM são construídas em JAVA com SWING, Swing é um widget toolkit GUI para uso com o Java. Ele possui alguns componentes como, Campo de texto, campo numérico, campo combo, etc. Cada um destes componentes possui algumas propriedades que podem ser alteradas para configurar tamanho, largura, altura, cor, fonte, etc.
 
 Um Script de Operação permite a manipulação dos componentes de tela do SAM, interferir em ações ou processos ou até mesmo criar componentes, ações ou processos customizados.
 
-Os componentes de tela do SAM são construidos a partir de componentes `Swing`, sendo assim, os métodos aplicaveis aos componentes swing são aplicados aos componentes do SAM.
+Os componentes de tela do SAM são construídos a partir de componentes `Swing`, sendo assim, os métodos aplicáveis aos componentes swing são aplicados aos componentes do SAM.
 
 As tarefas do SAM são divididas em dois tipos:
 
@@ -139,7 +139,7 @@ Executa uma SQL sem retorno, ou seja, apenas uma SQL para salvar (INSERT/UPDATE)
 
 === "Exemplo"
 	``` java
-	executarSalvarOuExcluir("UPDATE Abh80 SET abh80nome = 'José')
+	executarSalvarOuExcluir("UPDATE Abh80 SET abh80nome = 'José'")
 	```
 
 ### `ocultarColunas`
@@ -169,7 +169,7 @@ Cria um menu na parte superior da tarefa
 |------------------|------------------------------------------------|
 | String           | Nome do Menu                                   |
 | String           | Nome do Item do Menu                           |
-| ActionListener   | Ffunção que será executada ao clicar no menu   |
+| ActionListener   | Função que será executada ao clicar no menu   |
 | KeyStroke        | Atalho no teclado para chamar o menu           |
 
 === "Exemplo"
@@ -183,7 +183,7 @@ Altera a altura e a largura da tela somando os valores recebido como argumento a
 
 **Argumentos:**
 
-| Tipo             | Descrição                      |
+| Tipo          | Descrição                         |
 |---------------|-----------------------------------|
 | int           | Largura que a tela será alterada  |
 | int           | Altura que a tela será alterada   |
