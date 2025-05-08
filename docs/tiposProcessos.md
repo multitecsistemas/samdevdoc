@@ -20,7 +20,7 @@ As Listagens são documentos que disponibilizam informações claras e objetivas
 
 Esta ferramenta auxilia na tomada de decisão da empresa, portanto, é importante o desenvolvedor conhecer este meio mais fácil para obter melhores resultados. O Cubo de Decisões possibilita visualizar as atividades da empresa de modo gráfico e simplificado, bem como o seu desempenho, potenciais riscos ou desvios do planejado e a capacidade de obter indicadores de gestão.
 
-### Gedgets
+### Gadgets
 
 ----
 
