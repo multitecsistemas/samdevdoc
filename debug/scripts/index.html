@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scripts" class="md-skip">
+        <a href="#debug-de-script-de-operacoes" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -355,6 +355,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Script de Operação
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -366,6 +379,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeiros-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeiros passos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizando-o-sam4cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizando o SAM4Cliente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-o-debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciando o Debug
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -913,6 +990,59 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requisitos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primeiros-passos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primeiros passos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurando" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurando
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atualizando-o-sam4cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atualizando o SAM4Cliente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iniciando-o-debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iniciando o Debug
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -927,7 +1057,140 @@
 
 
 
-<h1 id="scripts">Scripts<a class="headerlink" href="#scripts" title="Permanent link">&para;</a></h1>
+<h1 id="debug-de-script-de-operacoes">Debug de Script de operações<a class="headerlink" href="#debug-de-script-de-operacoes" title="Permanent link">&para;</a></h1>
+<p>É possível fazer o debug de um script de operações.</p>
+<h2 id="requisitos">Requisitos<a class="headerlink" href="#requisitos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Intellij</li>
+<li>Java 21</li>
+</ol>
+<h2 id="primeiros-passos">Primeiros passos<a class="headerlink" href="#primeiros-passos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Crie um novo projeto java meven pelo Intellij com java 21.</li>
+<li>Crie uma paswta lib na raiz do projeto.</li>
+<li>Copie o JAR executavel do SAM$Cliente para a pasta lib.</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Imagem 1</label><label for="__tabbed_1_2">Imagem 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Debug script 1!" src="../../img/debug_script_1.png" title="Debug script 1" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Debug script 2!" src="../../img/debug_script_2.png" title="Debug script 2" /></p>
+</div>
+</div>
+</div>
+<h2 id="configurando">Configurando<a class="headerlink" href="#configurando" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Configurando a dependencia</p>
+<ul>
+<li>Em File-&gt;Project Structure navegue até a aba Modules.</li>
+<li>Selecione o projeto.</li>
+<li>Na opção + selecione JARs or Directories</li>
+<li>selecione o JAR da pasta lib</li>
+<li>Aplique as alterações</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Imagem 1</label><label for="__tabbed_2_2">Imagem 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Debug script 3!" src="../../img/debug_script_3.png" title="Debug script 3" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Debug script 4!" src="../../img/debug_script_4.png" title="Debug script 4" /></p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Crie um package chamado main e scripts.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Imagem 1</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Debug script 5!" src="../../img/debug_script_5.png" title="Debug script 5" /></p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>No arquivo Main.java chame a classe Main do SAM4Cliente.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kn">package</span><span class="w"> </span><span class="nn">main</span><span class="p">;</span>
+<span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">sam</span><span class="p">.</span><span class="na">swing</span><span class="p">.</span><span class="na">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>No arquivo Script.groovy no package script, a classe deve extender o classe ScriptBase do SAM.</p>
+<p>Nesse arquivo ficará o script a ser debugado.</p>
+<div class="admonition nota">
+<p class="admonition-title">Nota</p>
+<p>O codigo desse script precisa ser igual no intellij e na tela do SAM, qualquer alteração feita aqui precisa ser feita na tela da
+tarefa, como se fosse um script normal, precisa salvar, compilar, fechar e abrir a tela.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="kn">package</span><span class="w"> </span><span class="nn">scripts</span>
+
+<span class="w">    </span><span class="kn">import</span><span class="w"> </span><span class="nn">multitec.swing.core.MultitecRootPanel</span>
+<span class="w">    </span><span class="kn">import</span><span class="w"> </span><span class="nn">sam.swing.ScriptBase</span>
+
+<span class="w">    </span><span class="kd">class</span> <span class="nc">Script</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ScriptBase</span><span class="p">{</span>
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">execute</span><span class="p">(</span><span class="n">MultitecRootPanel</span><span class="w"> </span><span class="n">panel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">preSalvar</span><span class="p">(</span><span class="kt">boolean</span><span class="w"> </span><span class="n">salvo</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="nd">@Override</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">posSalvar</span><span class="p">(</span><span class="n">Long</span><span class="w"> </span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>Salve e compile o projeto</p>
+</li>
+</ol>
+<h2 id="atualizando-o-sam4cliente">Atualizando o SAM4Cliente<a class="headerlink" href="#atualizando-o-sam4cliente" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Substitua o JAR da pasta lib pelo JAR da nova versão, normalmente apenas esse passo resolve, mas pode precisar seguir os demais passos.</li>
+<li>Em File-&gt;Project Structure navegue até a aba Modules.</li>
+<li>Selecione o projeto.</li>
+<li>Ache e remova o JAR na lista de dependencias.</li>
+<li>Adicione o novo JAR.</li>
+<li>Salve e compile o projeto.</li>
+</ol>
+<h2 id="iniciando-o-debug">Iniciando o Debug<a class="headerlink" href="#iniciando-o-debug" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Configurando o Intellij</p>
+<ul>
+<li>Abra as configurações de debugs em Edit Configurations.</li>
+<li>Adicione uma nova configuração do tipo Aplication.</li>
+<li>Renomeie a configuração.</li>
+<li>Selecione o JDK do java 21.</li>
+<li>Selecione tambem a classe Main do projeto.</li>
+<li>Aplique as alterações.</li>
+<li>Inicie o debug no intellij.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Imagem 1</label><label for="__tabbed_4_2">Imagem 2</label><label for="__tabbed_4_3">Imagem 3</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Debug script 6!" src="../../img/debug_script_6.png" title="Debug script 6" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Debug script 7!" src="../../img/debug_script_7.png" title="Debug script 7" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Debug formulas 9!" src="../../img/debug_formula_9.png" title="Debug formulas 9" /></p>
+</div>
+</div>
+</div>
+</li>
+</ol>
 
 
 
