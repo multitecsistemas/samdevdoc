@@ -5,6 +5,9 @@ edit_uri: ""
 
 nav:    
     - Comece Aqui: index.md
+    - Debug:
+        - Formulas: debug/formulas.md
+        - Script de Operação: debug/scripts.md
     - Processos:
         - Tipos de Processos: tiposProcessos.md
         - Listagens: relatorios.md
