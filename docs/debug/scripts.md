@@ -9,9 +9,9 @@
 
 ## Primeiros passos
 
-1. Crie um novo projeto java meven pelo Intellij com java 21.
-2. Crie uma paswta lib na raiz do projeto.
-3. Copie o JAR executavel do SAM$Cliente para a pasta lib.
+1. Crie um novo projeto java maven pelo Intellij com java 21.
+2. Crie uma pasta lib na raiz do projeto.
+3. Copie o JAR executavel do SAM4Cliente para a pasta lib.
 
 === "Imagem 1"
 
