@@ -5,7 +5,11 @@ edit_uri: ""
 
 nav:    
     - Comece Aqui: index.md
-
+    - Debug:
+        - Formulas/Relatorios: debug/formulas.md
+        - Script de Operaçoes: debug/scripts.md
+    - Classes Bases: 
+        - FormulaBase: classesBase/formulaBase.md
 
         
 theme: 
