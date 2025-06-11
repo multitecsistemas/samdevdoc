@@ -16,18 +16,9 @@ nav:
         - Formulas: formulas.md
         - Servlet: servlet.md
     - Uteis:
-        - DateUtils: utils/DateUtils.md
-        - DecimalUtils: utils/DecimalUtils.md
-        - ESocialUtils: utils/ESocialUtils.md
-        - HoleriteUtils: utils/HoleriteUtils.md
-        - InterceptadorUtils: utils/InterceptadorUtils.md
-        - MDFeUtils: utils/MDFeUtils.md
-        - NFeUtils: utils/NFeUtils.md
-        - ReinfUtils: utils/ReinfUtils.md
-        - SCEUtils: utils/SCEUtils.md
-        - SFPUtils: utils/SFPUtils.md
-        - StringUtils: utils/StringUtils.md
-        - Utils: utils/Utils.md
+        - ClassesUteis: utils/Index.md
+        - Exemplos: exemplos/index.md
+
         
 theme: 
     name: material
