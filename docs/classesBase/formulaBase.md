@@ -72,7 +72,7 @@ public Aab10 obterUsuarioLogado()
 ```
 
 #### obterWherePadrao()
-Gera cláusulas WHERE padrão para consultas:
+Gera cláusulas WHERE padrão para consultas, considerando grupo centraliador e politica de uso.
 ```java
 public String obterWherePadrao(String classe)
 public String obterWherePadrao(String classe, String whereAndOr)
@@ -129,13 +129,13 @@ public String getCampo(String codAlinhamento, String registro, String campo)
 ### 🛠️ Utilitários
 
 #### getHoleriteUtils()
-Retorna utilitários para manipulação de holerites, devolve um objeto da classe [HoleriteUtils]()
+Retorna utilitários para manipulação de holerites, devolve um objeto da classe [HoleriteUtils](../uteis/holeriteUtils.md)
 ```java
 public HoleriteUtils getHoleriteUtils()
 ```
 
 #### getEstoqueUtils()
-Retorna utilitários para manipulação de estoque, devolve um objeto da classe [SCEUtils]()
+Retorna utilitários para manipulação de estoque, devolve um objeto da classe [SCEUtils](../uteis/sceUtils.md)
 ```java
 public SCEUtils getEstoqueUtils()
 ```
