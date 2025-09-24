@@ -92,7 +92,7 @@ Realizando uma request para o servlet usando um programa externo como o Insomnia
 
 === "Script"
     ``` java
-    public class ScriptAntigo extends ScriptBase {
+    public class Script extends ScriptBase {
         MultitecRootPanel tarefa
         @Override
         void execute(MultitecRootPanel panel) {
@@ -101,15 +101,14 @@ Realizando uma request para o servlet usando um programa externo como o Insomnia
         }
 
         private void buscarEntidade(){
-            String json = '{"abe01codigo": "01"}'
-            ObjectMapper mapper = new ObjectMapper();
-            JsonNode body = mapper.readTree(json);
+            TableMap body = new TableMap()
+            body.put("abe01codigo","01")
             WorkerRequest.create(this.tarefa.getWindow())
             .initialText("Buscando Entidade")
             .dialogVisible(true)
             .controllerEndPoint("servlet")
             .methodEndPoint("run")
-            .param("name", "equilibrio.separador.BuscarEntidade")
+            .param("name", "multitec.servlet.BuscarEntidade")
             .header("ignore-body-decrypt", "true")
             .parseBody(body)
             .success((response) -> {
