@@ -52,7 +52,3 @@ Para instalar o SAM e utilizar do SAMDEV ou outros Editores/IDEs, devemos instal
 
 - [Java 21](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 - [PostgreSQL](https://www.postgresql.org/download/)
-
-!!! note "Nota"
-	Visite nosso repositório para visualizar alguns exemplos que iremos explorar por aqui. 
-	[https://github.com/multitecsistemas/sam4](https://github.com/multitecsistemas/sam4)

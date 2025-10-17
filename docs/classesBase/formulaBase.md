@@ -46,7 +46,7 @@ class Formula extends FormulaBase{
 ### 📊 Acesso ao Banco de Dados
 
 #### getAcessoAoBanco()
-Retorna uma instância de [BancoDadosUtils](../uteis/bancoDadosUtils.md) para operações no banco de dados.
+Retorna uma instância de [BancoDadosUtils](../uteis/BancoDadosUtils.md) para operações no banco de dados.
 ```java
 public BancoDadosUtils getAcessoAoBanco()
 ```
@@ -129,13 +129,13 @@ public String getCampo(String codAlinhamento, String registro, String campo)
 ### 🛠️ Utilitários
 
 #### getHoleriteUtils()
-Retorna utilitários para manipulação de holerites, devolve um objeto da classe [HoleriteUtils](../uteis/holeriteUtils.md)
+Retorna utilitários para manipulação de holerites, devolve um objeto da classe [HoleriteUtils](../uteis/HoleriteUtils.md)
 ```java
 public HoleriteUtils getHoleriteUtils()
 ```
 
 #### getEstoqueUtils()
-Retorna utilitários para manipulação de estoque, devolve um objeto da classe [SCEUtils](../uteis/sceUtils.md)
+Retorna utilitários para manipulação de estoque, devolve um objeto da classe [SCEUtils](../uteis/SCEUtils.md)
 ```java
 public SCEUtils getEstoqueUtils()
 ```

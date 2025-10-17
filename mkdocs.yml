@@ -10,6 +10,17 @@ nav:
         - Script de Operaçoes: debug/scripts.md
     - Classes Bases: 
         - FormulaBase: classesBase/formulaBase.md
+        - RelatorioBase: classesBase/RelatorioBase.md
+    - Classes Uteis:
+        - Formulas: classesUteis/formulas.md
+        - Relatorios: classesUteis/relatorios.md
+        - Scripts de Operaçoes: classesUteis/scripts.md
+    - Componentes:
+        - Relatorios: componentes/relatorios.md
+        - Telas: componentes/telas.md
+    - Metodos:
+        - Metodos de Formulas: metodos/metodosFormulas.md
+        - Metodos de Relatorios: metodos/metodosRelatorios.md
 
         
 theme: 
